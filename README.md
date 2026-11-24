@@ -5,14 +5,14 @@ Practicing app design and development from scratch with AI. Each folder is one P
 ## How each app is built
 
 1. **Design**: a plain-text `design.txt` names the app, describes what it does, and lists its objects with their attributes and methods.
-2. **Build**: the objects become Python classes with the same names, then a command-line and/or web interface is added on top.
+2. **Build**: the objects become Python classes with the same names, then a `main.py` runs the app from the terminal.
 3. **Test**: each app has tests in `tests/` that check the core logic.
 
 ## Apps
 
 | App | What it does | Run it |
 |-----|--------------|--------|
-| [Flatmates Bill](flatmates-bill) | Splits a shared bill between two flatmates by days spent in the house and generates a PDF report | Web (Flask) or command line |
+| [Flatmates Bill](flatmates-bill) | Splits a shared bill between two flatmates by days spent in the house and generates a PDF report | `python main.py` |
 
 ## Running an app
 

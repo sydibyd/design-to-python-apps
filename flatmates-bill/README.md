@@ -26,7 +26,7 @@ Example: a 120.00 bill for March 2026, Saeii stayed 20 days and Mahi 25:
 | Mahi     |   25 | 55.6% |  66.67 |
 | **Total**|   45 |  100% | 120.00 |
 
-In the report and on the web page, the second flatmate pays the rest of the bill, so the two shares always add up exactly.
+In the report, the second flatmate pays the rest of the bill, so the two shares always add up exactly.
 
 ## Files
 
@@ -34,9 +34,8 @@ In the report and on the web page, the second flatmate pays the rest of the bill
 |------|---------|
 | `flat.py` | `Bill` and `Flatmate` classes |
 | `reports.py` | `PdfReport` class (uses [fpdf2](https://py-pdf.github.io/fpdf2/)) |
-| `main.py` | Command-line version |
-| `app.py`, `templates/`, `static/` | Web version ([Flask](https://flask.palletsprojects.com/)) |
-| `tests/` | Tests for the split, the PDF and the web pages |
+| `main.py` | The app: run it from the terminal |
+| `tests/` | Tests for the split and the PDF |
 
 ## Run it
 
@@ -54,15 +53,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-**Web version.** Start the server, then open http://127.0.0.1:5000:
-
-```bash
-python app.py
-```
-
-Fill in the form, click **Calculate** to see the split, or **Download PDF report** to get the PDF.
-
-**Command-line version.** Answer the questions; the PDF is saved to `reports/<period>.pdf`:
+**Run the app.** Answer the questions in the terminal; it prints what each flatmate pays and saves the PDF to `reports/<period>.pdf`:
 
 ```bash
 python main.py
