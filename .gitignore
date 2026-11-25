@@ -8,3 +8,5 @@ venv/
 # Generated reports
 reports/
 *.pdf
+# Generated images
+math-painting/images/

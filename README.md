@@ -13,6 +13,7 @@ Practicing app design and development from scratch with AI. Each folder is one P
 | App | What it does | Run it |
 |-----|--------------|--------|
 | [Flatmates Bill](flatmates-bill) | Splits a shared bill between two flatmates by days spent in the house and generates a PDF report | `python main.py` |
+| [Math Painting](math-painting) | Draws squares and rectangles from coordinates, sizes and colors you type, and saves the result as an image | `python main.py` |
 
 ## Running an app
 
